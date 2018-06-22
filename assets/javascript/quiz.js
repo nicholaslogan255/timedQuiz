@@ -107,19 +107,24 @@ window.onload = function () {
             //todo: lock out quiz from changing answers
             gradeQuiz(); // show results
 
-            $("submit").hide(); // hide submit button
+            
         }
 
         //   show the converted time in the "time" div.
         $("#time").text(timeConvert(timeRemain));
     }
 
-    // stop timer
+    // stop timer and prevent questions from being changed
     function stopTime(){
         timeRemain -= 1;
             clearInterval(intervalId); // stop timer
-            console.log("#### Time's Up: " + timeRemain); // log time up
+            console.log("#### Time's Up: " + timeRemain); // log that time up
+
+            $("#submit").hide(); // hide submit button
             $("#countdown").hide(); // hide the timer
+            $("#quizForm").hide();
+
+
 
     }
 
