@@ -4,7 +4,7 @@ body{
     color: #777777;
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     line-height: 2 ;
-    /* background-image: url(images/rhombus.png); */
+    /* background-image: url(assets/images/rhombus.png); */
 }
 h1{ 
     color: #4aaaa5;
@@ -19,7 +19,7 @@ header{
     background-color: #ffffff;
     border-color: #cccccc; 
     border-bottom: solid; 
-    font-family: 'Georgia', Times, Times New Roman, serif;
+    font-family: 'Georgia', 'Times', 'Times New Roman', 'serif';
 }
 
 #headerbox{
@@ -43,12 +43,6 @@ hr{
     height: 3px;
     background: #ccc;
     border-style: none;
-}
-
-img{
-    float: left;
-    margin-right: 20px;
-    margin-top: 20px;    
 }
 
 a{
@@ -82,6 +76,13 @@ section{
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+
+#countdown{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 30px;
 }
 
 /* CSS for the form page */

@@ -18,15 +18,100 @@
 
 <body>
 
+    <header>
+        <!-- Box to ensure header content is same size as main content for aestetics -->
+        <div id="headerbox">
+            <div id="name">Nic Logan</div>
+            <div id="navlinks">
+                <p>
+                    <a href=" https://nicholaslogan255.github.io/responsive-portfolio/"> Portfolio </a>
+                </p>
+            </div>
+        </div>
+    </header>
+
     <section id="mainBody">
         <h1>Composer Quiz</h1>
 
-        <div> Time Remaining:
+        <div id="countdown"> Time Remaining:
             <span id="time">##:##</span>
         </div>
 
 
+        <form id="obsidian">
+            What type of rock is obsidian?
+            <br>
+            <input type="radio" name="obsidian" value="Sedimentary"> Sedimentary
+            <br>
+            <input type="radio" name="obsidian" value="Igneous"> Igneous
+            <br>
+            <input type="radio" name="obsidian" value="Metamorphic"> Metamorphic
+            <br>
+
+            <hr> What type of rock is quartz?
+            <br>
+            <input type="radio" name="quartz" value="Sedimentary"> Sedimentary
+            <br>
+            <input type="radio" name="quartz" value="Igneous"> Igneous
+            <br>
+            <input type="radio" name="quartz" value="Metamorphic"> Metamorphic
+            <br>
+
+            <hr> What type of rock is basalt?
+            <br>
+            <input type="radio" name="basalt" value="Sedimentary"> Sedimentary
+            <br>
+            <input type="radio" name="basalt" value="Igneous"> Igneous
+            <br>
+            <input type="radio" name="basalt" value="Metamorphic"> Metamorphic
+            <br>
+
+            <hr> What type of rock is marble?
+            <br>
+            <input type="radio" name="marble" value="Sedimentary"> Sedimentary
+            <br>
+            <input type="radio" name="marble" value="Igneous"> Igneous
+            <br>
+            <input type="radio" name="marble" value="Metamorphic"> Metamorphic
+            <br>
+
+            <hr> What type of rock is sandstone?
+            <br>
+            <input type="radio" name="sandstone" value="Sedimentary"> Sedimentary
+            <br>
+            <input type="radio" name="sandstone" value="Igneous"> Igneous
+            <br>
+            <input type="radio" name="sandstone" value="Metamorphic"> Metamorphic
+            <br>
+
+            <hr> What type of rock is schist?
+            <br>
+            <input type="radio" name="schist" value="Sedimentary"> Sedimentary
+            <br>
+            <input type="radio" name="schist" value="Igneous"> Igneous
+            <br>
+            <input type="radio" name="schist" value="Metamorphic"> Metamorphic
+            <br>
+
+        </form>
+
+        <!-- submits answers if they finish early -->
+        <button id="submit">Get Results</button>
+
+        <!-- shows which questions they got wrong -->
+        <div id="results"></div>
+
+
+
+
+
+
+
     </section>
+
+    <footer>
+        Copyright
+    </footer>
 
 </body>
 
