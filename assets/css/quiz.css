@@ -83,6 +83,20 @@ section{
     text-align: center;
     font-weight: bolder;
     font-size: 30px;
+    position: fixed;
+    padding: 5px;
+    border-style: solid;
+    border-width: 2px;
+    
+
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    top: 50px;
+    right: 0;
+
+    z-index: 1;
+    background-color: rgb(243, 207, 176);
 }
 
 /* CSS for the form page */
@@ -119,6 +133,45 @@ footer{
     border-top-style: solid;
     bottom: 0%;
 }
+
+img{
+    width: 200px;
+    height: 200px;
+
+    border-style: solid;
+    border-width: 2px;
+
+}
+
+.questionBox{
+    
+    height: 200px;
+    width: 100%;
+    position: relative;
+}
+
+.optionsBox{
+    margin: 5px;
+    float: left;
+}
+
+.questionImg{
+    border-style: solid;
+    border-width: 2px;
+    float: left;
+}
+
+.correct{
+    color: green;
+    font-size: 25px;
+}
+
+.incorrect{
+    color: red;
+    font-size: 25px;
+}
+
+
 
 /*
   These rules take effect when the browser's width
