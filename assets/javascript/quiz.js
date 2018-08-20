@@ -41,7 +41,7 @@ window.onload = function () {
     function gradeQuiz() {
         var resultsMessage = ""
 
-        var correct = 0;
+        var correctAns = 0;
 
         // q1
         if ($("input:radio[name=obsidian]:checked").val() != "Igneous") {
@@ -49,11 +49,12 @@ window.onload = function () {
             $("#results").append(incorrect);
         }
         else {
+            console.log("Correct");
 
             let correct = "<p><span class = 'correct'>Correct!</span> Obsidian is an Igneous rock!</p>";
             $("#results").append(correct);
 
-            correct++;
+            correctAns++;
         }
 
         // q2
@@ -65,7 +66,7 @@ window.onload = function () {
             let correct = "<p><span class = 'correct'>Correct!</span> Quartz is an Sedimentary rock!</p>";
             $("#results").append(correct);
 
-            correct++;
+            correctAns++;
         }
 
 
@@ -77,7 +78,7 @@ window.onload = function () {
         } else {
             let correct = "<p><span class = 'correct'>Correct!</span> Basalt is an Igneous rock!</p>";
             $("#results").append(correct);
-            correct++;
+            correctAns++;
         }
 
 
@@ -89,7 +90,7 @@ window.onload = function () {
         } else {
             let correct = "<p><span class = 'correct'>Correct!</span> Marble is an Metamorphic rock!</p>";
             $("#results").append(correct);
-            correct++;
+            correctAns++;
         }
 
         // q5
@@ -100,7 +101,7 @@ window.onload = function () {
         } else {
             let correct = "<p><span class = 'correct'>Correct!</span> Sandstone is an Sedimentary rock!</p>";
             $("#results").append(correct);
-            correct++;
+            correctAns++;
         }
 
         // q6
@@ -111,12 +112,12 @@ window.onload = function () {
         } else {
             let correct = "<p><span class = 'correct'>Correct!</span> Schist is an Metamorphic rock!</p>";
             $("#results").append(correct);
-            correct++;
+            correctAns++;
         }
 
-        resultsMessage += "You got " + correct + "/6 correct! "
+        resultsMessage += "You got " + correctAns + "/6 correct! "
 
-        if (correct == 6) {
+        if (correctAns == 6) {
             resultsMessage += "Congratulations. You got them all right!"
         }
         else { resultsMessage += "Looks like you need to study up on your rocks." }
